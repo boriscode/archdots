@@ -35,4 +35,6 @@ abbr komande 'cd ~/komande/ && nvim'
 zoxide init --cmd cd fish | source
 
 fish_vi_key_bindings
-
+if test -f ~/.config/fish/secrets.fish
+    source ~/.config/fish/secrets.fish
+end
